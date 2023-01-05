@@ -8,11 +8,12 @@ function App() {
       date: new Date(2020, 7, 14),
       LocationOfExpenditure: "Manhattan,NYC",
     },
-    { id: "e2",
-     title: "New TV",
-     amount: 799.49,
-     date: new Date(2021, 2, 12) ,
-     LocationOfExpenditure: "Ooty,India",
+    {
+      id: "e2",
+      title: "New TV",
+      amount: 799.49,
+      date: new Date(2021, 2, 12),
+      LocationOfExpenditure: "Ooty,India",
     },
     {
       id: "e3",
@@ -32,13 +33,13 @@ function App() {
   return (
     <div>
       <h2>Let's get started!</h2>
-      {expenses.map(expense => (
-        <ExpenseItem 
-        title = {expense.title}
-        amount = {expense.amount}
-        date = {expense.date}
-        LocationOfExpenditure = {expense.LocationOfExpenditure}
-        ></ExpenseItem>
+      {expenses.map((expense) => (
+        <ExpenseItem
+          title={expense.title}
+          amount={expense.amount}
+          date={expense.date}
+          LocationOfExpenditure={expense.LocationOfExpenditure}
+        />
       ))}
     </div>
   );
