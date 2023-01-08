@@ -1,9 +1,9 @@
-// import React from "react";
+import React,{useState} from "react";
 // import ExpenseDate from "./components/Expenses/ExpenseDate";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 function App() {
-  const expenses = [
+  const expensesArr = [
     {
       id: "e1",
       title: "Toilet Paper",
@@ -33,9 +33,16 @@ function App() {
       LocationOfExpenditure: "Mnagalore,Inida",
     },
   ];
+  const [expenses,addToExpense] = useState(expensesArr)
+
+  const addExpenseHandler = (expense)=> {
+    console.log(expense)
+    addToExpense([expense,...expenses])
+  }
+
   return(
       <div>
-        <NewExpense/>
+        <NewExpense onAddExpense = {addExpenseHandler} />
         <Expenses item = {expenses} />
       </div>
     );
