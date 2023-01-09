@@ -3,7 +3,7 @@ import "./Expenses.css";
 import Card from "../UI/Card";
 // import ExpenseDate from "./ExpenseDate";
 import ExpensesFilter from "./ExpensesFilter";
-import ExpenseItem from "./ExpenseItem";
+// import ExpenseItem from "./ExpenseItem";
 import ExpensesList from "./ExpensesList";
 
 const Expenses = (props) => {
@@ -27,38 +27,3 @@ const Expenses = (props) => {
 };
 
 export default Expenses;
-
-
-
-
-
-
-
-      {/* {(filteredExpenses.length === 0) ? (<p>No Expenses found.</p>) : (filteredExpenses.map((expense) => (
-        <ExpenseItem
-          key={expense.id}
-          title={expense.title}
-          amount={expense.amount}
-          date={expense.date}
-          LocationOfExpenditure={expense.LocationOfExpenditure}
-        />
-      )))} */}
-      {/* {filteredExpenses.length === 0 && <p>No Expenses found.</p>}
-      {filteredExpenses.length > 0 && filteredExpenses.map((expense) => (
-        <ExpenseItem
-          key={expense.id}
-          title={expense.title}
-          amount={expense.amount}
-          date={expense.date}
-          LocationOfExpenditure={expense.LocationOfExpenditure}
-        />
-      ))} */}
-      {/* {filteredExpenses.map((expense) => (
-        <ExpenseItem
-          key={expense.id}
-          title={expense.title}
-          amount={expense.amount}
-          date={expense.date}
-          LocationOfExpenditure={expense.LocationOfExpenditure}
-        />
-      ))} */}
